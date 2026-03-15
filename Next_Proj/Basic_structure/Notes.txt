@@ -1,0 +1,50 @@
+
+// Js cannot create backend server because it don't have funcationality to access file system and network but node js can create backend server because it have functionality to access file system and network
+
+// google chrome v8 engine written in c++ but we can not use js to create backend and access file but v8 can do this so we add raper over v8 of javascript and we call it node js
+
+        // Array in JS
+// any kind of value can be store in js array
+var arr=[1,2,3,'malware',{},true,function(){},false]
+
+        // forEach to work with array
+// run foreach on every value of array
+var arr=[1,2,3,4]
+arr.forEach(function(val)){
+    console.log(val+' hello)
+
+}
+
+        // Map on array
+// map run on array and return new array
+var arr=[1,32,35,65]
+arr.map(function(val){
+    console.log(val+'12')
+})
+
+        // Arrow Function in JS
+// Normal function create their own this but arrow function get this from outside scope
+
+// simple function
+function malware(name){
+    console.log('hello' + name);
+}
+malware('world');
+
+// arrow function 
+const chia = ()=>{
+    let malware = "This is a malware";
+    console.log(this);
+
+}
+chia()
+
+// arrow function with callback
+settimeout(()=>{
+    console.log('This is a malware');
+},2000)
+    
+// Npm basic
+npm init -y 
+package.json  // tell scripts that run proj, who made and description etc
+npm i express 

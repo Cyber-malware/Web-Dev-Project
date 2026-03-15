@@ -1,0 +1,231 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+  :root{
+    --container:rgb(24, 24, 24);
+    --grey_color:rgb(190, 190, 190);
+    --shadow_color:rgb(64, 139, 101);
+    --light_black: rgb(32, 32, 32);
+  }
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-family: "Nunito", sans-serif;
+}
+
+
+.left{
+    width: 30vw;
+    height: 100vh;
+    /* color: white; */
+    background-color:var(--container);
+    box-shadow: 0 0 20px var(--shadow_color);
+   
+}
+.left .home{
+    /* gap: 50px; */
+    margin-top: 25px;
+    margin-left:25px;
+    min-height: 20vh;
+}
+
+.logo>img{
+    height:16px ;
+    
+}
+
+.home ul li{
+    list-style-type: none;
+    align-items: end;  
+    display: flex;
+    gap: 18px;
+    padding-top:10px;
+    
+}
+.home ul>li>span{
+   font-weight: 800;
+   font-size: 14px;
+   /* gap: 20px; */
+}
+
+.home ul .home_img{
+    height: 19px;
+}
+.library{
+   min-height: 50vh;
+   
+}
+ul .search_img{
+    height: 20px;
+    
+
+}
+.lib_text{
+    gap: 5px;
+}
+.lib_text .lib_svg{
+    height: 22px;
+
+}
+.collection{
+    display: inline;
+    /* flex-direction: row; */
+}
+.collection .plus{
+    height: 25px;
+    /* padding-left:30px ; */
+}
+
+.left_footer {
+   display: grid;
+   grid-template-columns: 2.8fr 5fr;
+   align-items: center;
+   
+    /* flex-direction: row; */
+     /* max-width: 30px;  */
+}
+.left_footer a{
+    /* gap: 10px; */
+    color: var(--grey_color);
+    text-decoration: none;
+    margin: 0px 10px 0px 20px;
+    font-size: 10px;
+}
+
+.left .english img{
+    height: 20px;
+}
+.left .english  span{
+    padding-top: 2px;
+}
+.left .english {
+    border: 1px solid gray;
+    padding: 5px 20px;
+    gap: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    display: inline-flex;
+    border-radius: 20px;
+}
+
+.right{
+    width: 75vw;
+    height: 100vh;
+    background-color:var(--container);
+    position: relative;
+    
+}
+
+.header{
+    height: 50px;
+   background-color: black;
+   justify-content: space-around;
+   box-shadow: 0 0 20px var(--shadow_color);
+}
+
+.nav_center{
+    gap: 15px;
+    font-weight: 500;
+}
+.nav_center a{
+    color: var(--grey_color); 
+}
+.nav_right a{
+    /* background-color: black; */
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.nav_right .signup{
+    color: var(--grey_color);
+    margin-right: 15px;
+}
+.nav_right .login{
+    padding:11px 22px;
+    border: none;
+    background-color: white;
+    border-radius: 25px;
+
+}
+.signup:hover{
+    font-size: .8rem;
+    color: white;
+    padding:5px ;
+}
+
+.login:hover{  
+    font-size: .9rem;
+    font-weight: bold;
+}
+.playlist{
+    margin: 12px 30px;
+   
+}
+.playlist a:first-child{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+}
+.playlist a:nth-child(2){
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--grey_color);
+}
+a{
+    text-decoration: none;
+}
+.songs_albm{
+    flex-wrap: wrap;
+    display: flex;
+    max-height: 62vh;
+     overflow-y:scroll;
+}
+.songs{
+    height: 220px;
+    background-color:rgb(31, 30, 30);
+    width: 180px;
+    align-items:center;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    display: flex;
+    position: relative;
+   flex-direction: column;
+   padding: 10px 7px;
+  
+}
+.songs .play_btn{
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+     right: 13px;
+     bottom: 130px;
+
+     opacity: 0;
+     transition: all 1s ease-in-out;
+ 
+}
+
+.songs .image{
+    width: 100%;
+    object-fit: contain;
+}
+
+.songs :nth-child(3){
+    font-size:14px ;
+    font-weight: bold;
+}
+.songs :nth-child(4){
+    font-size: 12px;
+}
+
+.playbar{
+    bottom: 10px;
+    position: absolute;
+    background-color: rgb(62, 104, 62);
+    width: 100%;
+    padding:15px ;
+}

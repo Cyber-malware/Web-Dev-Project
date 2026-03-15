@@ -1,0 +1,16 @@
+
+    # Project flow    
+
+initilize the project
+install express 
+
+    # ejs
+install ejs and setup as view engine
+
+    # dynamic routing
+handle data coming from backend
+setting up parsers for forms
+
+
+setting up public static methods
+

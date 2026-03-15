@@ -1,0 +1,321 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", "sans-serif";
+}
+
+body {
+    background-color: #000000;
+}
+
+:root {
+    --color: #e50914;
+}
+
+.main {
+    background-image: url(Asserts/bckimage.jpg);
+    height: 1000px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    height: 1000px;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    opacity: 0.55;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+    margin: auto;
+
+}
+
+nav .logo {
+    height: 55px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.main .transparent_box {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.705);
+    height: 650px;
+    width: 40vw;
+    align-items: center;
+
+}
+
+.main .transparent_box .items_box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.transparent_box .items_box>span {
+    position: relative;
+    color: white;
+    font-size: 2rem;
+    top: 40px;
+    font-weight: 400;
+
+}
+
+.main .transparent_box .items_box .email {
+    background-color: #333;
+    border: none;
+    margin-top: 80px;
+    border-radius: 5px;
+    color: white;
+    padding: 16px;
+    font-size: 1rem;
+    width: 300px;
+}
+
+.main .transparent_box .items_box .password {
+    background-color: #333;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 16px;
+    width: 300px;
+}
+
+.main .transparent_box .items_box .login {
+    width: 300px;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px;
+    color: white;
+    margin-top: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e50914;
+    font-size: 1rem;
+
+}
+
+.sep_box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.sep_box .label_box {
+    display: flex;
+    flex-direction: row;
+}
+
+.sep_box .label_box>span {
+    color: #8d8d8d;
+    font-size: 14px;
+}
+
+.sep_box .help {
+    color: #8d8d8d;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.help:hover {
+    text-decoration: underline;
+}
+
+.new_netflix {
+    display: flex;
+    padding-right: 130px;
+}
+
+.new_netflix span {
+    color: #b3b3b3;
+
+}
+
+.new_netflix .signup {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.signup:hover {
+    text-decoration: underline;
+}
+
+.learn_more {
+    max-width: 300px;
+    padding-top: 10px;
+    padding-right: 30px;
+    color: #8d8d8d;
+    font-size: 13px;
+}
+
+.learn_more .link {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.main .footer {
+    display: flex;
+    position: relative;
+    margin-top: 80px;
+    background-color: rgba(0, 0, 0, 0.705);
+    height: 185px;
+
+}
+
+.footer .footer_box {
+    justify-content: center;
+    align-items: baseline;
+    margin: auto;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:880px) {
+    .main {
+        background-color: black;
+        background-image: none;
+        height: 850px;
+    }
+    .main .box{
+        height: 850px;
+    }
+    .main .transparent_box {
+        width: 100vw;
+        height: 500px;
+    }
+    .learn_more {
+        max-width: 80vw;
+        padding: 10px 0px;
+    }
+    .main .footer {
+        height: 185px;
+        border-top:1px solid gray ;
+    
+    }
+}
+
+@media screen and (max-width:390px) {
+    nav .logo {
+        height: 35px;
+    }
+
+    .transparent_box .items_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .transparent_box .items_box>span {
+        font-size: 1.5rem;
+        font-weight: 00;
+
+    }
+
+    .main .transparent_box .items_box .email {
+        color: white;
+        padding: 14px;
+        font-size: .7rem;
+        width: 150px;
+    }
+
+    .main .transparent_box .items_box .password {
+        padding: 14px;
+        width: 150px;
+    }
+
+    .main .transparent_box .items_box .login {
+        width: 150px;
+        padding: 14px;
+        font-size: .8rem;
+
+    }
+    .sep_box {
+        gap: 15px;
+    }
+
+    .sep_box .label_box>span {
+        font-size: 13px;
+    }
+
+    .sep_box .help {
+        font-size: 13px;
+    }
+    .new_netflix {
+        align-items: center;
+        padding: 0px;
+    }
+    .new_netflix span {
+        font-size: .8rem;
+    }
+    .new_netflix .signup {
+        font-size: .8rem;
+    }
+    .learn_more {
+        max-width: 70vw;
+        padding: 10px 0px;
+        color: #8d8d8d;
+        font-size: 13px;
+    }
+    .learn_more .link {
+        text-decoration: none;
+    }
+}
+.footer_box .questions {
+    color: #8d8d8d;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.questions:hover {
+    text-decoration: underline;
+}
+
+.footer_box .grid {
+    display: grid;
+    max-width: 90vw;
+    text-decoration: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 14px;
+    gap: 20px;
+}
+
+.grid .faq {
+    text-decoration: none;
+    gap: 50px;
+    color: #8d8d8d;
+}
+
+.faq:hover {
+    text-decoration: underline;
+}
+@media (max-width:680px){
+    .footer_box  a{
+        font-size: 12px;
+
+    }
+    .footer_box .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 12px;
+        gap: 15px;
+    }
+}

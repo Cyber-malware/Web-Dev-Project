@@ -1,0 +1,13 @@
+npx nodemon server.js      // auto restart the server
+
+// install the mongosh/Mongo-compas and connect it with cluster on mongoDB altas.
+
+// use mongos package to connect server with mongodb
+
+npm i mongos express
+
+// db directory in src folder and then db.js file
+
+Telling and database what kind of data he gona handle called schema creation and all of this done in model directory.
+
+npx nodemon server.js

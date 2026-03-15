@@ -1,0 +1,6 @@
+
+storing just id called referencing
+storing full product data called embading
+
+
+after npm init -y     // change the main to app.js in package.json

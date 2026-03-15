@@ -1,0 +1,18 @@
+
+Backemd 
+
+npm i express mongoose
+
+npx nodemon server.js
+
+npm i multer     middleware for form data
+
+npm i dotenv    // use dot env file
+
+
+
+FrontEnd
+
+npm create vite@latest .
+
+ npm i react-router-dom     // help to create seprate routes and pages

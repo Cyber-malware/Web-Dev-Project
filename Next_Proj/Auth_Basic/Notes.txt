@@ -1,0 +1,8 @@
+
+Intilize the package
+Install the jsonwebtoken, bcrypt mongoose
+
+
+set cookie
+set bcrypt
+set jwt token

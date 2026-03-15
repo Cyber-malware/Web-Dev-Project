@@ -1,0 +1,6 @@
+
+
+user write posts
+register, login and logout
+create user 
+post creation, like and delete

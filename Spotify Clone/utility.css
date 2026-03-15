@@ -1,0 +1,58 @@
+
+.display{
+    display: flex;
+    flex-direction: row;
+}
+.justify{
+    justify-content: center;
+}
+.align{
+    align-items: end;
+}
+.just_space{
+    justify-content: space-between;
+}
+.alg_center{
+    align-items: center;
+}
+.just_left{
+    justify-content: left;
+}
+.margin{
+    margin: 0px 22px;
+}
+.gap{
+   gap: 5px;
+}
+
+
+
+
+                                   /* Scroll Bar */
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #333333 #222222; /* dark scrollbar with dark thumb */
+  }
+  
+  /* Hide scrollbar on Webkit/Blink */
+  body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  body::-webkit-scrollbar-track {
+    background: #222222; /* dark color for the scrollbar track */
+  }
+  
+  /* Handle */
+  body::-webkit-scrollbar-thumb {
+    background: #333333; /* dark color for the scrollbar thumb */
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  body::-webkit-scrollbar-thumb:hover {
+    background: #555555; /* lighter color on hover */
+  }
+  

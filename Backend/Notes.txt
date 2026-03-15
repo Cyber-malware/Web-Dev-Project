@@ -1,0 +1,10 @@
+
+we can add any kind of value in js error
+var arr=[1,2,3,'harry',{},true, function()]
+
+// run function for every value of array
+var arr=[1,2,3]
+arr.forEach(function(){
+
+})
+

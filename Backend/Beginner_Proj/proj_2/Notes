@@ -1,0 +1,8 @@
+npx nodemon server.js      // auto restart the server
+
+
+
+install the mongosh/Mongo-compas and connect it with cluster on mongoDB altas.
+
+
+use mongos package to connect server with mongodb
